@@ -1,0 +1,155 @@
+.gallery__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery__main {
+    width: 390px;
+}
+
+.gallery__thumbnails {
+    width: 81px;
+    margin-right: 20px;
+}
+
+.gallery__thumbnails .slick-current .gallery__thumbnail-inner {
+    border-color: #609DD5;
+}
+
+.gallery__thumbnail {
+    margin-bottom: 16px;
+
+    cursor: pointer;
+}
+
+.gallery__thumbnail-inner {
+    height: 64px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 3px;
+    background: #FFFFFF;
+    border: 1px solid #D9DCDD;
+}
+
+.gallery__thumbnail-inner img {
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.gallery__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 64px;
+
+    background: #FFFFFF;
+    border: 1px solid #D9DCDD;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.gallery__arrow--prev {
+    margin-bottom: 16px;
+}
+
+.gallery__arrow--next {
+    margin-top: -8px;
+}
+
+.gallery__arrow--prev .gallery__icon {
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.gallery__main .slick-track {
+    display: flex;
+    width: 100%;
+}
+
+.gallery__main img {
+    height: 544px;
+    object-fit: contain;
+    object-position: center;
+}
+
+@media (max-width: 1064px) {
+    .gallery__main {
+        width: 300px;
+    }
+
+    .gallery__thumbnails {
+        width: 65px;
+        margin-right: 10px;
+    }
+
+    .gallery__arrow,
+    .gallery__thumbnail-inner {
+        width: 64px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 764px) {
+    .gallery__container {
+        flex-direction: column-reverse;
+    }
+
+    .gallery__thumbnails {
+        width: 100%;
+        margin: 0;
+    }
+
+    .gallery__thumbnails .slick-slider {
+        padding-left: 46px;
+        padding-right: 46px;
+    }
+
+    .gallery__thumbnail {
+        margin: 0;
+    }
+
+    .gallery__thumbnail-inner {
+        position: relative;
+        right: -6px;
+    }
+
+    .gallery__arrow {
+        position: absolute;
+        top: 0;
+
+        margin: 0;
+        height: 48px;
+        width: 32px;
+    }
+
+    .gallery__arrow--prev {
+        left: 0;
+    }
+
+    .gallery__arrow--prev .gallery__icon {
+        transform: rotate(90deg);
+    }
+
+    .gallery__arrow--next {
+        right: 0;
+    }
+
+    .gallery__arrow--next .gallery__icon {
+        transform: rotate(-90deg);
+    }
+
+    .gallery__main {
+        width: 55%;
+        max-height: 240px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+    .gallery__main img {
+        height: 240px;
+    }
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="search" viewBox="0 0 24 24" fill="transparent">
+        <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M21 20.9999L16.65 16.6499" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="location" viewBox="0 0 16 16" fill="transparent">
+        <path d="M14 6.66699C14 11.3337 8 15.3337 8 15.3337C8 15.3337 2 11.3337 2 6.66699C2 5.07569 2.63214 3.54957 3.75736 2.42435C4.88258 1.29913 6.4087 0.666992 8 0.666992C9.5913 0.666992 11.1174 1.29913 12.2426 2.42435C13.3679 3.54957 14 5.07569 14 6.66699Z"
+              stroke="#4D5D62" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8 8.66699C9.10457 8.66699 10 7.77156 10 6.66699C10 5.56242 9.10457 4.66699 8 4.66699C6.89543 4.66699 6 5.56242 6 6.66699C6 7.77156 6.89543 8.66699 8 8.66699Z"
+              stroke="#4D5D62" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="arrow-down" viewBox="0 0 16 16" fill="transparent">
+        <path d="M4 6L8 10L12 6" stroke="#4D5D62" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="arrow-left" viewBox="0 0 32 32" fill="transparent">
+        <path d="M20 8L12 16L20 24" stroke="#00171F" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="breadcrumbs-arrow" viewBox="0 0 12 12" fill="transparent">
+        <path d="M4.5 9L7.5 6L4.5 3" stroke="#4D5D62" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="star" viewBox="0 0 16 16">
+        <path d="M8.00016 1.33301L10.0602 5.50634L14.6668 6.17968L11.3335 9.42634L12.1202 14.013L8.00016 11.8463L3.88016 14.013L4.66683 9.42634L1.3335 6.17968L5.94016 5.50634L8.00016 1.33301Z"/>
+    </symbol>
+</svg>

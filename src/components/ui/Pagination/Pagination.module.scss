@@ -1,0 +1,38 @@
+.list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.item {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #4D5D62;
+
+  background-color: #F2F3F4;
+  border-radius: 3px;
+
+  &.active {
+    color: #FFFFFF;
+
+    background-color: #609DD5;
+  }
+}

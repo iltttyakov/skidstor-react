@@ -1,0 +1,210 @@
+.box {
+  margin-bottom: 95px;
+}
+
+.name {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  color: #0F0E0E;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 51px;
+}
+
+.gallery {
+  width: 683px;
+  height: 544px;
+  margin-right: 30px;
+}
+
+.params {
+  max-width: 416px;
+  width: 100%;
+}
+
+.price {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #00171F;
+}
+
+.priceValue {
+  margin-right: 2px;
+  margin-left: 3px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.paramsBlock {
+  margin-bottom: 24px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button {
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.paramsTitle {
+  margin: 0;
+  margin-bottom: 7px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #00171F;
+}
+
+.paragraph {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #4D5D62;
+}
+
+.tabsList {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #D9DCDD;
+  list-style: none;
+}
+
+.tabsItem {
+  margin-right: 46px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.tabName {
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+  color: #609DD5;
+
+  border: none;
+  background: transparent;
+
+  &.active {
+    color: #00171F;
+  }
+}
+
+@media (max-width: 1064px) {
+  .params {
+    width: 100%;
+  }
+
+  .mobileNone {
+    display: none;
+  }
+}
+
+@media (max-width: 764px) {
+  .box {
+    margin-bottom: 50px;
+  }
+
+  .main {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .gallery {
+    margin-right: 0;
+    margin-bottom: 18px;
+    width: 100%;
+    height: auto;
+  }
+
+  .tabsContainer {
+    padding: 0;
+  }
+
+  .tabsList {
+    overflow: scroll;
+
+    padding: 0 24px;
+    padding-bottom: 2px;
+
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  .tabsItem {
+    margin-right: 33px;
+  }
+
+  .compare {
+    width: 100%;
+  }
+
+  .dynamics {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .price {
+    margin-bottom: 6px;
+
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .priceValue {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .paramsBlock {
+    margin-bottom: 15px;
+  }
+
+  .paramsTitle {
+    margin-bottom: 8px;
+
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .tabName {
+    font-size: 16px;
+    line-height: 26px;
+    white-space: nowrap;
+  }
+}

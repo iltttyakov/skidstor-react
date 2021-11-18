@@ -1,0 +1,176 @@
+.box {
+  position: relative;
+
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 64px;
+
+  border: 1px solid #609DD5;
+  border-radius: 3px;
+}
+
+.hintContainer {
+  display: none;
+
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 70px;
+
+  width: 100%;
+  padding-left: 32px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+
+  background: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0 4px 20px rgba(15, 14, 14, 0.1);
+}
+
+.hintBlock {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.hintTitle {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #0F0E0E;
+}
+
+.hintList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.hintItem {
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+
+.input {
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  font-size: 16px;
+  line-height: 162%;
+
+  outline: none;
+
+  &::-webkit-input-placeholder { /* Chrome */
+    color: #9f9f9f;
+  }
+
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: #9f9f9f;
+  }
+
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: #9f9f9f;
+    opacity: 1;
+  }
+
+  &:-moz-placeholder { /* Firefox 4 - 18 */
+    color: #9f9f9f;
+    opacity: 1;
+  }
+
+  &:focus {
+    & + .hintContainer {
+      display: block;
+    }
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 100%;
+  width: 116px;
+  padding: 0;
+
+  border: none;
+  background: #609DD5;
+  border-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  cursor: pointer;
+}
+
+.buttonText {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.buttonIcon {
+  display: none;
+
+  stroke: #FFFFFF;
+}
+
+@media (max-width: 1064px) {
+  .box {
+    height: 48px;
+  }
+
+  .hintContainer {
+    top: 54px;
+  }
+
+  .input {
+    font-size: 14px;
+  }
+
+  .buttonText {
+    display: none;
+  }
+
+  .buttonIcon {
+    display: block;
+  }
+
+  .button {
+    width: 48px;
+  }
+}
+
+@media (max-width: 764px) {
+  .box {
+    border: none;
+  }
+
+  .hintContainer {
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    padding-right: 0;
+  }
+
+  .hintItem {
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+}

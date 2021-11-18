@@ -1,0 +1,70 @@
+.box {
+}
+
+.label {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 74px;
+  padding: 5px 10px;
+
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4D5D62;
+
+  background: #F2F3F4;
+  border-radius: 3px;
+
+  cursor: pointer;
+  transition: all .1s ease;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &:active {
+    opacity: .5;
+  }
+}
+
+.input {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+
+  &:checked + .label {
+    color: #FFFFFF;
+
+    background: #609DD5;
+  }
+}
+
+.mobileSmall {
+
+}
+
+@media (max-width: 764px) {
+  .label {
+    height: 42px;
+    min-width: 71px;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    &.mobileSmall {
+      font-size: 12px;
+      line-height: 18px;
+
+      height: 32px;
+      width: 71px;
+    }
+  }
+}
